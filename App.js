@@ -12,7 +12,7 @@ import { Images, Profiles } from './App/Themes';
 import { AntDesign } from '@expo/vector-icons'
 
 function randomProfile() {
-  var newProfile = Profiles.random();
+  const newProfile = Profiles.random();
   console.log(newProfile);
   return {
     profileImage: newProfile.image,
@@ -92,7 +92,7 @@ export default function App() {
 }
 
 const { height, width } = Dimensions.get('window');
-var cardWidth = 0.43 * height;
+const cardWidth = 0.43 * height;
 
 const styles = StyleSheet.create({
   container: {
